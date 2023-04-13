@@ -9,9 +9,9 @@ public class Visit {
 	// Идентификатор посещения
 	private Long visitId;
 	// Дата посещения компьютерного клуба
-	private Date visitDate;
+	private String visitDate;
 	// Продолжительность посещения компьютерного клуба
-	private Integer visitLenth;
+	private String visitLenth;
 	// Сумма к оплате за посещение компьютерного клуба
 	private Integer pay;
 	
@@ -28,7 +28,7 @@ public class Visit {
 	public Visit() {
 		
 	}
-	public Visit(Date visitDate, Integer visitLenth, Integer pay, Long visitorId, Visitor visitor, Computer computer) {
+	public Visit(String visitDate, String visitLenth, Integer pay, Long visitorId, Visitor visitor, Computer computer) {
 		this.visitDate = visitDate;
 		this.visitLenth = visitLenth;
 		this.pay = pay;
@@ -36,7 +36,7 @@ public class Visit {
 		this.visitor = visitor;
 		this.computer = computer;
 	}
-	public Visit(Date visitDate, Integer visitLenth, Integer pay, Long visitorId, Visitor visitor, Long computerId,
+	public Visit(String visitDate, String visitLenth, Integer pay, Long visitorId, Visitor visitor, Long computerId,
 			Computer computer) {
 		this.visitDate = visitDate;
 		this.visitLenth = visitLenth;
@@ -46,7 +46,7 @@ public class Visit {
 		this.computerId = computerId;
 		this.computer = computer;
 	}
-	public Visit(Long visitId, Date visitDate, Integer visitLenth, Integer pay, Long visitorId, Visitor visitor,
+	public Visit(Long visitId, String visitDate, String visitLenth, Integer pay, Long visitorId, Visitor visitor,
 			Long computerId, Computer computer) {
 		this.visitId = visitId;
 		this.visitDate = visitDate;
@@ -65,17 +65,17 @@ public class Visit {
 		this.visitId = visitId;
 	}
 	
-	public Date getVisitDate() {
+	public String getVisitDate() {
 		return visitDate;
 	}
-	public void setVisitDate(Date visitDate) {
+	public void setVisitDate(String visitDate) {
 		this.visitDate = visitDate;
 	}
 	
-	public Integer getVisitLenth() {
+	public String getVisitLenth() {
 		return visitLenth;
 	}
-	public void setVisitLenth(Integer visitLenth) {
+	public void setVisitLenth(String visitLenth) {
 		this.visitLenth = visitLenth;
 	}
 	
@@ -96,7 +96,7 @@ public class Visit {
 		this.visitorId = visitorId;
 	}
 	public String getVisitor() {
-		return visitor.getPatronymic();
+		return visitor.getSurname() + " " + visitor.getName() + " " + visitor.getPatronymic();
 	}
 	public void setVisitor(Visitor visitor) {
 		this.visitor = visitor;

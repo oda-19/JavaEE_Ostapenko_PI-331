@@ -6,10 +6,10 @@ package domain;
 public class Visitor {
 	// Идентификатор посетителя
 	private Long visitorId;
-	// Имя посетителя
-	private String name;
 	// Фамилия посетителя
 	private String surname;
+	// Имя посетителя
+	private String name;
 	// Отчество посетителя
 	private String patronymic;
 	// Документ, удостоверяющий личность посетителя
@@ -22,20 +22,20 @@ public class Visitor {
 	public Visitor() {
 		
 	}
-	public Visitor(String name, String surname, String patronymic, String identityDocument,
+	public Visitor(String surname, String name, String patronymic, String identityDocument,
 			String address, String phone) {
-		this.name = name;
 		this.surname = surname;
+		this.name = name;
 		this.patronymic = patronymic;
 		this.identityDocument = identityDocument;
 		this.address = address;
 		this.phone = phone;
 	}
-	public Visitor(Long visitorId, String name, String surname, String patronymic, String identityDocument,
+	public Visitor(Long visitorId, String surname, String name, String patronymic, String identityDocument,
 			String address, String phone) {
 		this.visitorId = visitorId;
-		this.name = name;
 		this.surname = surname;
+		this.name = name;
 		this.patronymic = patronymic;
 		this.identityDocument = identityDocument;
 		this.address = address;
@@ -49,18 +49,18 @@ public class Visitor {
 		this.visitorId = visitorId;
 	}
 	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	
 	public String getSurname() {
 		return surname;
 	}
 	public void setSurname(String surname) {
 		this.surname = surname;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public String getPatronymic() {
@@ -93,7 +93,7 @@ public class Visitor {
 	
 	@Override
 	public String toString() {
-		return "Visitor {visitorId = " + visitorId + ", name = " + name + ", surname = " + surname + ", patronymic = "
+		return "Visitor {visitorId = " + visitorId + ", surname = " + surname + ", name = " + name + ", patronymic = "
 				+ patronymic + ", identityDocument = " + identityDocument + ", address = " + address + ", phone = " + phone
 				+ "}";
 	}

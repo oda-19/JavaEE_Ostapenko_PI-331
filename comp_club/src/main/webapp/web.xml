@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
-  <servlet>
-    <description></description>
-    <display-name>RoleServlet</display-name>
-    <servlet-name>RoleServlet</servlet-name>
-    <servlet-class>controller.RoleServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>RoleServlet</servlet-name>
-    <url-pattern>/RoleServlet</url-pattern>
-  </servlet-mapping>
   <display-name>comp_club</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -19,6 +9,16 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ComputerServlet</display-name>
+    <servlet-name>ComputerServlet</servlet-name>
+    <servlet-class>controller.ComputerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ComputerServlet</servlet-name>
+    <url-pattern>/ComputerServlet</url-pattern>
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>VisitorServlet</display-name>

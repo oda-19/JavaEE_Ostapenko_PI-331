@@ -1,18 +1,21 @@
 package controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.Servlet;
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
  * Servlet implementation class ComputerServlet
  */
-@WebServlet("/HelloComputerServlet")
+@WebServlet("/computer")
 public class ComputerServlet extends HttpServlet implements Servlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,13 +32,10 @@ public class ComputerServlet extends HttpServlet implements Servlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.setContentType("text/html");
-		PrintWriter writer = response.getWriter();
-		try {
-			writer.println("<h2>Привет ComputerServlet</h2>");
-		} finally {
-			writer.close();
-		}
+		String path = "/WEB-INF/view/computer.jsp";
+        ServletContext servletContext = getServletContext();
+        RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher(path);
+        requestDispatcher.forward(request, response);
 	}
 
 	/**
