@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="comp_club">
+    <output-path>$PROJECT_DIR$/out/artifacts/comp_club</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="comp_club/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="comp_club" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/git/repository/JavaEE_Ostapenko_PI-331/comp_club/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-3.0.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/git/repository/JavaEE_Ostapenko_PI-331/comp_club/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-3.0.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/git/repository/JavaEE_Ostapenko_PI-331/comp_club/src/main/webapp/WEB-INF/lib/postgresql-42.5.4.jar" />
+          <element id="file-copy" path="E:/apache-tomcat-10.1.7/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5-migrated-0.0.1.jar" />
+          <element id="file-copy" path="E:/apache-tomcat-10.1.7/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5-migrated-0.0.1.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
