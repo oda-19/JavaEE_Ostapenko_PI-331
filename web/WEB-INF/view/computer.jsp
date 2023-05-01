@@ -28,9 +28,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach var="computer" items="${listComputer}">
+						<c:forEach var="computer" items="${computers}">
 							<tr>
-								<td>${computer.getComputerId()}</td>
+								<td>${computer.getId()}</td>
 								<td>${computer.getComputerName()}</td>
 								<td>${computer.getComputerStatus()}</td>
 								<td>${computer.getComputerDescription()}</td>
@@ -47,16 +47,19 @@
 					<form method="POST" action="">
 						<p><label for="computerName">Наименование</label> <input type="text" name="computerName" /></p>
 						<p><label for="computerStatus">Статус компьютера</label>
-							<select>
+							<select name = "computerStatus">
 								<option disabled>Выберите статус компьютера</option>
-								<c:forEach var="computerStatus" items="${listComputerStatus}">
-									<option value="${computerStatus}">${computerStatus.getComputerStatus()}></option>
+								<c:forEach var="computerStatus" items="${computerStatuses}">
+									<option value="${computerStatus}">
+										<c:out value="${computerStatus.getComputerStatus()}"></c:out>
+									</option>
 								</c:forEach>
 							</select>
 						</p>
 						<p><label for="computerDescription">Описание характеристик</label> <input type="text" name="computerDescription" /></p>
+						<p><button type="submit">Добавить</button></p>
 					</form>
-					<p><button type="submit">Добавить</button></p>
+
 				</div>
 			</article>
 		</section>

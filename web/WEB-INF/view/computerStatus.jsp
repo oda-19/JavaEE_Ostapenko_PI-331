@@ -25,9 +25,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach var="computerStatus" items="${listComputerStatus}">
+						<c:forEach var="computerStatus" items="${computerStatuses}">
 							<tr>
-								<td>${computerStatus.getStatusId()}</td>
+								<td>${computerStatus.getId()}</td>
 								<td>${computerStatus.getComputerStatus()}</td>
 							</tr>
 						</c:forEach>
@@ -41,8 +41,9 @@
 				<div class="text-article">
 					<form method="POST" action="">
 						<p><label for="computerStatus">Статус</label> <input type="text" name="computerStatus" /></p>
+						<p><button type="submit">Добавить</button></p>
 					</form>
-					<p><button type="submit">Добавить</button></p>
+
 				</div>
 			</article>
 		</section>

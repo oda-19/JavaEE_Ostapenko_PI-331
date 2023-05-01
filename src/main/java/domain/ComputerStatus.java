@@ -5,23 +5,27 @@ package main.java.domain;
 */
 public class ComputerStatus {
 	// Идентификатор статуса компьютера
-	private Long statusId;
+	private Long id;
 	// Описание статуса компьютера 
 	private String computerStatus;
 
 	public ComputerStatus() {
 		
 	}
-	public ComputerStatus(Long statusId, String computerStatus) {
-		this.statusId = statusId;
+	public ComputerStatus(Long id, String computerStatus) {
+		this.id = id;
 		this.computerStatus = computerStatus;
 	}
-	
-	public Long getStatusId() {
-		return statusId;
+
+    public ComputerStatus(String computerStatus) {
+		this.computerStatus = computerStatus;
+    }
+
+    public Long getId() {
+		return id;
 	}
-	public void setStatusId(Long statusId) {
-		this.statusId = statusId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getComputerStatus() {
@@ -33,6 +37,6 @@ public class ComputerStatus {
 	
 	@Override
 	public String toString() {
-		return "ComputerStatus {statusId = " + statusId + ", computerStatus = " + computerStatus + "}";
+		return "ComputerStatus {id = " + id + ", computerStatus = " + computerStatus + "}";
 	}
 }

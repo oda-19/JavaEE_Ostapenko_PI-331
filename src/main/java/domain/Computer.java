@@ -5,7 +5,7 @@ package main.java.domain;
 */
 public class Computer {
 	// Идентификатор компьютера
-	private Long computerId;
+	private Long id;
 	// Наименование компьютера
 	private String computerName;
 	// Описание характеристик компьютера
@@ -18,20 +18,20 @@ public class Computer {
 	public Computer() {
 		
 	}
-	public Computer(Long computerId, String computerName, String computerDescription, Long computerStatusId,
+	public Computer(Long id, String computerName, String computerDescription, Long computerStatusId,
 			ComputerStatus computerStatus) {
-		this.computerId = computerId;
+		this.id = id;
 		this.computerName = computerName;
 		this.computerDescription = computerDescription;
 		this.computerStatusId = computerStatusId;
 		this.computerStatus = computerStatus;
 	}
-	
-	public Long getComputerId() {
-		return computerId;
+
+	public Long getId() {
+		return id;
 	}
-	public void setComputerId(Long computerId) {
-		this.computerId = computerId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	public String getComputerName() {
@@ -66,7 +66,7 @@ public class Computer {
 	
 	@Override
 	public String toString() {
-		return "Computer {computerId = " + computerId + ", computerName = " + computerName + ", computerDescription = "
+		return "Computer {id = " + id + ", computerName = " + computerName + ", computerDescription = "
 				+ computerDescription + ", computerStatusId = " + computerStatusId + ", computerStatus = " + computerStatus
 				+ "}";
 	}

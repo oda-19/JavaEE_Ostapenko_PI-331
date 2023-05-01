@@ -30,9 +30,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach var="visitor" items="${listVisitor}">
+						<c:forEach var="visitor" items="${visitors}">
 							<tr>
-								<td>${visitor.getVisitorId()}</td>
+								<td>${visitor.getId()}</td>
 								<td>${visitor.getSurname()}</td>
 								<td>${visitor.getName()}</td>
 								<td>${visitor.getPatronymic()}</td>
@@ -56,8 +56,9 @@
 						<p><label for="identityDocument">Документ, удостоверяющий личность</label> <input type="text" name="identityDocument" /></p>
 						<p><label for="address">Адрес</label> <input type="text" name="address" /></p>
 						<p><label for="phone">Телефон</label> <input type="text" name="phone" /></p>
+						<p><button type="submit">Добавить</button></p>
 					</form>
-					<p><button type="submit">Добавить</button></p>
+
 				</div>
 			</article>
 		</section>

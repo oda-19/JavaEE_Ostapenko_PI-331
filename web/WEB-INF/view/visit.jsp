@@ -32,11 +32,11 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach var="visit" items="${listVisit}">
+						<c:forEach var="visit" items="${visits}">
 							<tr>
-								<td>${visit.getVisitId()}</td>
+								<td>${visit.getId()}</td>
 								<td>${visit.getVisitDate()}</td>
-								<td>${visit.getVisitLenth()}</td>
+								<td>${visit.getVisitLength()}</td>
 								<td>${visit.getPay()}</td>
 								<td>${visit.getVisitor()}</td>
 								<td>${visit.getComputer()}</td>
@@ -52,26 +52,31 @@
 				<div class="text-article">
 					<form method="POST" action="">
 						<p><label for="visitDate">Дата посещения</label> <input type="text" name="visitDate" /></p>
-						<p><label for="visitLenth">Продолжительность посещения</label> <input type="text" name="visitLenth" /></p>
+						<p><label for="visitLength">Продолжительность посещения</label> <input type="text" name="visitLength" /></p>
 						<p><label for="pay">Сумма к оплате за посещение</label> <input type="text" name="pay" /></p>
 						<p><label for="visitor">Посетитель</label>
-							<select>
+							<select name = "visitor">
 								<option disabled>Выберите посетителя</option>
-								<c:forEach var="visitor" items="${listVisitor}">
-									<option value="${visitor}">${visitor.getSurname()} ${visitor.getName()} ${visitor.getPatronymic()}></option>
+								<c:forEach var="visitor" items="${visitors}">
+									<option value="${visitor}">
+											<c:out value="${visitor.getSurname()} ${visitor.getName()} ${visitor.getPatronymic()}"></c:out>
+									</option>
 								</c:forEach>
 							</select>
 						</p>
 						<p><label for="computer">Компьютер</label>
-							<select>
+							<select name = "computer">
 								<option disabled>Выберите компьютер</option>
-								<c:forEach var="computer" items="${listComputer}">
-									<option value="${computer}">${computer.getComputerName()}></option>
+								<c:forEach var="computer" items="${computers}">
+									<option value="${computer}">
+											<c:out value="${computer.getComputerName()}"></c:out>
+									</option>
 								</c:forEach>
 							</select>
 						</p>
+						<p><button type="submit">Добавить</button></p>
 					</form>
-					<p><button type="submit">Добавить</button></p>
+
 				</div>
 			</article>
 		</section>

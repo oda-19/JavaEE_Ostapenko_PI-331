@@ -7,13 +7,13 @@ import java.util.Date;
 */
 public class Visit {
 	// Идентификатор посещения
-	private Long visitId;
+	private Long id;
 	// Дата посещения компьютерного клуба
 	private Date visitDate;
 	// Продолжительность посещения компьютерного клуба
-	private String visitLenth;
+	private String visitLength;
 	// Сумма к оплате за посещение компьютерного клуба
-	private Integer pay;
+	private Float pay;
 	
 	// Внешний ключ - ссылка на сущность Visitor
 	private Long visitorId;
@@ -28,11 +28,11 @@ public class Visit {
 	public Visit() {
 		
 	}
-	public Visit(Long visitId, Date visitDate, String visitLenth, Integer pay, Long visitorId, Visitor visitor,
+	public Visit(Long id, Date visitDate, String visitLength, Float pay, Long visitorId, Visitor visitor,
 			Long computerId, Computer computer) {
-		this.visitId = visitId;
+		this.id = id;
 		this.visitDate = visitDate;
-		this.visitLenth = visitLenth;
+		this.visitLength = visitLength;
 		this.pay = pay;
 		this.visitorId = visitorId;
 		this.visitor = visitor;
@@ -40,11 +40,11 @@ public class Visit {
 		this.computer = computer;
 	}
 
-	public Long getVisitId() {
-		return visitId;
+	public Long getId() {
+		return id;
 	}
-	public void setVisitId(Long visitId) {
-		this.visitId = visitId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	public Date getVisitDate() {
@@ -54,17 +54,17 @@ public class Visit {
 		this.visitDate = visitDate;
 	}
 	
-	public String getVisitLenth() {
-		return visitLenth;
+	public String getVisitLength() {
+		return visitLength;
 	}
-	public void setVisitLenth(String visitLenth) {
-		this.visitLenth = visitLenth;
+	public void setVisitLength(String visitLength) {
+		this.visitLength = visitLength;
 	}
 	
-	public Integer getPay() {
+	public Float getPay() {
 		return pay;
 	}
-	public void setPay(Integer pay) {
+	public void setPay(Float pay) {
 		this.pay = pay;
 	}
 	
@@ -102,7 +102,7 @@ public class Visit {
 	
 	@Override
 	public String toString() {
-		return "Visit {visitId = " + visitId + ", visitDate = " + visitDate + ", visitLenth = " + visitLenth + ", pay = " + pay
+		return "Visit {id = " + id + ", visitDate = " + visitDate + ", visitLength = " + visitLength + ", pay = " + pay
 				+ ", visitorId = " + visitorId + ", visitor = " + visitor + ", computerId = " + computerId + ", computer = "
 				+ computer + "}";
 	}

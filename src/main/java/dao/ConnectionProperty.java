@@ -14,7 +14,7 @@ public class ConnectionProperty {
 
     }
 
-    protected Connection getConnection() {
+    public Connection getConnection() {
         Connection connection = null;
         try {
             Class.forName("org.postgresql.Driver");

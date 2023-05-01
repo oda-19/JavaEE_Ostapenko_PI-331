@@ -5,7 +5,7 @@ package main.java.domain;
 */
 public class Visitor {
 	// Идентификатор посетителя
-	private Long visitorId;
+	private Long id;
 	// Фамилия посетителя
 	private String surname;
 	// Имя посетителя
@@ -22,9 +22,9 @@ public class Visitor {
 	public Visitor() {
 		
 	}
-	public Visitor(Long visitorId, String surname, String name, String patronymic, String identityDocument,
+	public Visitor(Long id, String surname, String name, String patronymic, String identityDocument,
 			String address, String phone) {
-		this.visitorId = visitorId;
+		this.id = id;
 		this.surname = surname;
 		this.name = name;
 		this.patronymic = patronymic;
@@ -32,12 +32,21 @@ public class Visitor {
 		this.address = address;
 		this.phone = phone;
 	}
-	
-	public Long getVisitorId() {
-		return visitorId;
+
+	public Visitor(String surname, String name, String patronymic, String identityDocument, String address, String phone) {
+		this.surname = surname;
+		this.name = name;
+		this.patronymic = patronymic;
+		this.identityDocument = identityDocument;
+		this.address = address;
+		this.phone = phone;
 	}
-	public void setVisitorId(Long visitorId) {
-		this.visitorId = visitorId;
+
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	public String getSurname() {
@@ -84,7 +93,7 @@ public class Visitor {
 	
 	@Override
 	public String toString() {
-		return "Visitor {visitorId = " + visitorId + ", surname = " + surname + ", name = " + name + ", patronymic = "
+		return "Visitor {id = " + id + ", surname = " + surname + ", name = " + name + ", patronymic = "
 				+ patronymic + ", identityDocument = " + identityDocument + ", address = " + address + ", phone = " + phone
 				+ "}";
 	}
