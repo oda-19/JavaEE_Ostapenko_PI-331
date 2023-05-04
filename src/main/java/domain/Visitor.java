@@ -22,9 +22,7 @@ public class Visitor {
 	public Visitor() {
 		
 	}
-	public Visitor(Long id, String surname, String name, String patronymic, String identityDocument,
-			String address, String phone) {
-		this.id = id;
+	public Visitor(String surname, String name, String patronymic, String identityDocument, String address, String phone) {
 		this.surname = surname;
 		this.name = name;
 		this.patronymic = patronymic;
@@ -32,8 +30,8 @@ public class Visitor {
 		this.address = address;
 		this.phone = phone;
 	}
-
-	public Visitor(String surname, String name, String patronymic, String identityDocument, String address, String phone) {
+	public Visitor(Long id, String surname, String name, String patronymic, String identityDocument, String address, String phone) {
+		this.id = id;
 		this.surname = surname;
 		this.name = name;
 		this.patronymic = patronymic;

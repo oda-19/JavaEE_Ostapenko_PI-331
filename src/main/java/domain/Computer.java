@@ -18,8 +18,13 @@ public class Computer {
 	public Computer() {
 		
 	}
-	public Computer(Long id, String computerName, String computerDescription, Long computerStatusId,
-			ComputerStatus computerStatus) {
+	public Computer(Long id, String computerName, String computerDescription, Long computerStatusId) {
+		this.id = id;
+		this.computerName = computerName;
+		this.computerDescription = computerDescription;
+		this.computerStatusId = computerStatusId;
+	}
+	public Computer(Long id, String computerName, String computerDescription, Long computerStatusId, ComputerStatus computerStatus) {
 		this.id = id;
 		this.computerName = computerName;
 		this.computerDescription = computerDescription;
@@ -27,7 +32,7 @@ public class Computer {
 		this.computerStatus = computerStatus;
 	}
 
-	public Long getId() {
+    public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
