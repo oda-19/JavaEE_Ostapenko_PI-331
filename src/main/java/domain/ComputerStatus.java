@@ -12,14 +12,13 @@ public class ComputerStatus {
 	public ComputerStatus() {
 		
 	}
+	public ComputerStatus(String computerStatus) {
+		this.computerStatus = computerStatus;
+	}
 	public ComputerStatus(Long id, String computerStatus) {
 		this.id = id;
 		this.computerStatus = computerStatus;
 	}
-
-    public ComputerStatus(String computerStatus) {
-		this.computerStatus = computerStatus;
-    }
 
     public Long getId() {
 		return id;

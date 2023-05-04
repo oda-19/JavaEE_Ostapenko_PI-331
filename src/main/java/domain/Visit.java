@@ -28,8 +28,16 @@ public class Visit {
 	public Visit() {
 		
 	}
+	public Visit(Long id, Date visitDate, String visitLength, Float pay, Long visitorId, Long computerId) {
+		this.id = id;
+		this.visitDate = visitDate;
+		this.visitLength = visitLength;
+		this.pay = pay;
+		this.visitorId = visitorId;
+		this.computerId = computerId;
+	}
 	public Visit(Long id, Date visitDate, String visitLength, Float pay, Long visitorId, Visitor visitor,
-			Long computerId, Computer computer) {
+				 Long computerId, Computer computer) {
 		this.id = id;
 		this.visitDate = visitDate;
 		this.visitLength = visitLength;
@@ -40,7 +48,7 @@ public class Visit {
 		this.computer = computer;
 	}
 
-	public Long getId() {
+    public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {

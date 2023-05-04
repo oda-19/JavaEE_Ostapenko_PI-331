@@ -5,6 +5,12 @@
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
+  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="fec525fa-e95e-4f08-95b6-9670ba31ace8">
       <console name="comp_club" type="STANDARD" schema="comp_club" session="Main" />
@@ -28,7 +34,7 @@
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
-          <database-version value="9999.0" />
+          <database-version value="15.2" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />

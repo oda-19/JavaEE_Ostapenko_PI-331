@@ -16,7 +16,7 @@
         <description></description>
         <display-name>ComputerServlet</display-name>
         <servlet-name>ComputerServlet</servlet-name>
-        <servlet-class>main.java.controller.ComputerServlet</servlet-class>
+        <servlet-class>main.java.controller.computer.ComputerServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ComputerServlet</servlet-name>
@@ -26,7 +26,7 @@
         <description></description>
         <display-name>VisitorServlet</display-name>
         <servlet-name>VisitorServlet</servlet-name>
-        <servlet-class>main.java.controller.VisitorServlet</servlet-class>
+        <servlet-class>main.java.controller.visitor.VisitorServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>VisitorServlet</servlet-name>
@@ -36,7 +36,7 @@
         <description></description>
         <display-name>VisitServlet</display-name>
         <servlet-name>VisitServlet</servlet-name>
-        <servlet-class>main.java.controller.VisitServlet</servlet-class>
+        <servlet-class>main.java.controller.visit.VisitServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>VisitServlet</servlet-name>
@@ -46,7 +46,7 @@
         <description></description>
         <display-name>ComputerStatusServlet</display-name>
         <servlet-name>ComputerStatusServlet</servlet-name>
-        <servlet-class>main.java.controller.ComputerStatusServlet</servlet-class>
+        <servlet-class>main.java.controller.computerStatus.ComputerStatusServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ComputerStatusServlet</servlet-name>
