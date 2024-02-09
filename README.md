@@ -4,16 +4,18 @@
 Страница Статусы компьютера
 ![alt text](https://github.com/oda-19/JavaEE_Ostapenko_PI-331/blob/screen/2024-02-09_05-17-51.png?raw=true)
 
-<h2 align="center">Страница Редактирование статуса компьютера
+Страница Редактирование статуса компьютера
 ![alt text](https://github.com/oda-19/JavaEE_Ostapenko_PI-331//blob/screen/2024-02-09_05-18-36.png?raw=true)
 
-<h2 align="center">Страница Удаление статуса компьютера
+Страница Удаление статуса компьютера
 ![alt text](https://github.com/oda-19/JavaEE_Ostapenko_PI-331/blob/screen/2024-02-09_05-18-58.png?raw=true)
 
 <h2 align="center">Страница Компьютеры
+  
 ![alt text](https://github.com/oda-19/JavaEE_Ostapenko_PI-331/blob/screen/2024-02-09_05-19-15.png?raw=true)
 
 <h2 align="center">Страница Редактирование компьютера
+  
 ![alt text](https://github.com/oda-19/JavaEE_Ostapenko_PI-331/blob/screen/2024-02-09_05-19-36.png?raw=true)
 
 <h2 align="center">Страница Удаление компьютера
